@@ -1,0 +1,18 @@
+{
+  "name": "clautik",
+  "owner": {
+    "name": "Rishabh Mekala",
+    "email": "rishabh.mekala@aidenai.com"
+  },
+  "description": "Clautik — ticket tracking for Claude Code with a Claude-themed Kanban dashboard.",
+  "plugins": [
+    {
+      "name": "clautik",
+      "source": "./",
+      "description": "Write tickets to Claude with /ticket and /td, track them on a Claude-themed Kanban dashboard. Hooks + SQLite + React.",
+      "category": "productivity",
+      "keywords": ["tickets", "kanban", "project-management", "hooks"],
+      "license": "MIT"
+    }
+  ]
+}

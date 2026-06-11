@@ -1,0 +1,52 @@
+/* Console theme globals — dark + mono + Claude coral. */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  --mono: "JetBrains Mono", "SF Mono", "SFMono-Regular", ui-monospace, "Menlo",
+    "Consolas", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #141312;
+  color: #ece7e0;
+  font-family: var(--mono);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Thin, terminal-style scrollbars. */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2926;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #383430;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2c2926 transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6a655d;
+}

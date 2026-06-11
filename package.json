@@ -1,0 +1,24 @@
+{
+  "name": "clautik",
+  "version": "0.1.0",
+  "description": "Clautik — write tickets to Claude, see them on a Claude-themed Kanban dashboard. Hooks + SQLite + React.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Rishabh Mekala <rishabh.mekala@aidenai.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishabxx/clautik.git"
+  },
+  "homepage": "https://github.com/rishabxx/clautik",
+  "keywords": ["claude-code", "claude-code-plugin", "tickets", "kanban", "hooks"],
+  "scripts": {
+    "serve": "bun run server/index.ts",
+    "cli": "bun run server/cli.ts",
+    "web:dev": "cd web && bun run dev",
+    "web:build": "cd web && bun run build",
+    "setup": "cd web && bun install && bun run build"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}

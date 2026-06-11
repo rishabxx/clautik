@@ -1,0 +1,16 @@
+{
+  "name": "clautik",
+  "displayName": "Clautik",
+  "version": "0.1.0",
+  "description": "Write tickets to Claude, see them on a Claude-themed Kanban dashboard. Hooks + SQLite + React.",
+  "author": {
+    "name": "Rishabh Mekala",
+    "email": "rishabh.mekala@aidenai.com",
+    "url": "https://github.com/rishabxx"
+  },
+  "homepage": "https://github.com/rishabxx/clautik",
+  "repository": "https://github.com/rishabxx/clautik",
+  "license": "MIT",
+  "keywords": ["tickets", "kanban", "project-management", "hooks", "productivity", "sqlite"],
+  "hooks": "./hooks/hooks.json"
+}
