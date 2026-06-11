@@ -2,7 +2,7 @@
   "name": "clautik",
   "displayName": "Clautik",
   "version": "0.1.0",
-  "description": "Write tickets to Claude, see them on a Claude-themed Kanban dashboard. Hooks + SQLite + React.",
+  "description": "Write tickets to Claude with /ticket and /td, then track them on a fast, terminal-style console dashboard — Kanban board, analytics, and a live activity feed. Hooks + SQLite + React.",
   "author": {
     "name": "Rishabh Mekala",
     "email": "rishabh.mekala@aidenai.com",

@@ -1,11 +1,12 @@
 # 🎟️ Clautik
 
-Write tickets to Claude, see them on a Claude-themed Kanban dashboard.
+Write tickets to Claude, track them on a fast, Claude-themed console dashboard — Kanban board, analytics, and a live activity feed.
 
 Clautik is a lightweight ticket tracker for **Claude Code**, in the spirit of
 [`claude-mem`](https://github.com/thedotmack/claude-mem). It installs as a Claude
 Code **plugin** — hooks capture tickets straight from your session, SQLite stores
-them, and a warm, Claude-styled Kanban board shows them off.
+them, and a dense, terminal-style console dashboard (Kanban board · analytics ·
+live activity) shows them off in the Claude palette.
 
 ```
 /ticket fix the login redirect loop    →   instantly tracked, no model turn
@@ -65,8 +66,8 @@ The dashboard builds itself on first launch, so there's no separate setup step.
 (`td` = "ticket + do"; named to avoid colliding with the `claude-mem:do` skill —
 rename it in the regex in `server/tickets.ts` if you prefer another trigger).
 
-`/ticket` syntax: text after `/ticket` is the title; a trailing `!high`/`!medium`/
-`!low` sets priority; ` -- ` separates an optional body.
+`/ticket` syntax: text after `/ticket` is the title; a trailing
+`!urgent`/`!high`/`!medium`/`!low` sets priority; ` -- ` separates an optional body.
 
 ## CLI
 
@@ -102,7 +103,7 @@ marketplace: `/plugin marketplace add ./path/to/clautik`, then
 server/          db.ts · tickets.ts · cli.ts · index.ts   (Bun + SQLite + REST)
 hooks/           hooks.json                          (SessionStart + UserPromptSubmit)
 skills/          ticket/ · dashboard/                (conversational skills)
-web/             Vite + React + Tailwind v4 Kanban dashboard
+web/             Vite + React console UI — dashboard · board · analytics (hand-built SVG charts, no chart lib)
 ```
 
 ## License

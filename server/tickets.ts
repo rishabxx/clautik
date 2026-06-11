@@ -260,7 +260,7 @@ export function parseTicketCommand(prompt: string): ParsedCommand | null {
   // (e.g. `title !high -- body`), since both read naturally.
   let priority: Priority = "medium";
   const stripPriority = (s: string): string => {
-    const pr = s.match(/\s!(low|medium|high)\s*$/i);
+    const pr = s.match(/\s!(urgent|high|medium|low)\s*$/i);
     if (pr) {
       priority = pr[1].toLowerCase() as Priority;
       return s.slice(0, pr.index).trim();

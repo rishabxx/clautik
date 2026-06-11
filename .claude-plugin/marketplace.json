@@ -4,12 +4,12 @@
     "name": "Rishabh Mekala",
     "email": "rishabh.mekala@aidenai.com"
   },
-  "description": "Clautik — ticket tracking for Claude Code with a Claude-themed Kanban dashboard.",
+  "description": "Clautik — ticket tracking for Claude Code with a terminal-style, Claude-themed console dashboard.",
   "plugins": [
     {
       "name": "clautik",
       "source": "./",
-      "description": "Write tickets to Claude with /ticket and /td, track them on a Claude-themed Kanban dashboard. Hooks + SQLite + React.",
+      "description": "Write tickets to Claude with /ticket and /td, track them on a fast, terminal-style console dashboard — Kanban board, analytics, and a live activity feed. Hooks + SQLite + React.",
       "category": "productivity",
       "keywords": ["tickets", "kanban", "project-management", "hooks"],
       "license": "MIT"
